@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Jost', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.swiper-pagination-bullet {
+  height: 5px;
+  width: 5px;
+  opacity: 1;
+  background-color: #884CE6;
+}
+
+.swiper-pagination-bullet-active {
+  height: 8px;
+  width: 8px;
+  opacity: 1;
+  background-color: white;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.animateInst {
+  animation: instaPost 1s ease;
+}
+
+@keyframes instaPost {
+  0% {
+    opacity: .7;
+
+  }
+  50% {
+    filter: saturate(0);
+
+  }
+
+  100% {
+    opacity: 1;
+    filter: saturate(1);
+  }
+}
